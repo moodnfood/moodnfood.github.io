@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO -->
+  <title>Reserve a Table — Mood&amp;Food | Fine Dining Karachi</title>
+  <meta name="description" content="Book a table at Mood&amp;Food, Karachi's finest dining destination. Easily reserve online for any occasion — dinner for two, family gatherings, or private events." />
+  <link rel="canonical" href="https://moodfood.pk/reservation.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Reserve a Table — Mood&amp;Food" />
+  <meta property="og:description" content="Book your table at Mood&amp;Food online. Karachi's award-winning fine dining restaurant." />
+  <meta property="og:image"       content="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&q=80&auto=format&fit=crop" />
+  <meta property="og:url"         content="https://moodfood.pk/reservation.html" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍷</text></svg>" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- NAVIGATION -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html" class="nav__logo" aria-label="Mood&amp;Food — Home">
+          <span class="nav__logo-text">Mood&amp;Food</span>
+          <span class="nav__logo-tagline" aria-hidden="true">Fine Dining · Karachi</span>
+        </a>
+        <button class="nav__toggle" id="navToggle" aria-controls="navList" aria-expanded="false" aria-label="Open navigation menu">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+        <ul class="nav__list" id="navList" role="list">
+          <li><a href="index.html"       class="nav__link">Home</a></li>
+          <li><a href="menu.html"        class="nav__link">Menu</a></li>
+          <li><a href="about.html"       class="nav__link">About Us</a></li>
+          <li><a href="reservation.html" class="nav__link nav__cta btn btn--primary">Reserve a Table</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- RESERVATION HERO -->
+    <section class="reservation-hero" aria-labelledby="reservationHeroHeading">
+      <div class="reservation-hero__content container">
+        <nav aria-label="Breadcrumb">
+          <ol class="breadcrumb" role="list">
+            <li><a href="index.html">Home</a></li>
+            <li class="breadcrumb__separator" aria-hidden="true">/</li>
+            <li class="breadcrumb__current" aria-current="page">Reservation</li>
+          </ol>
+        </nav>
+        <p class="eyebrow" style="color:var(--color-accent);font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;margin-bottom:.5rem;">Reserve Your Experience</p>
+        <h1 id="reservationHeroHeading">Book a Table</h1>
+        <p>Secure your seat at Karachi's most celebrated dining destination. We look forward to welcoming you.</p>
+      </div>
+    </section>
+
+    <!-- BOOKING SECTION -->
+    <section class="section" aria-labelledby="bookingHeading">
+      <div class="container">
+
+        <h2 id="bookingHeading" class="sr-only">Reservation Form and Information</h2>
+
+        <!-- Aria live region for form announcements -->
+        <div
+          id="formAnnounce"
+          role="status"
+          aria-live="polite"
+          aria-atomic="true"
+          class="sr-only"
+        ></div>
+
+        <div class="booking-layout">
+
+          <!-- ── BOOKING FORM ──────────────────────── -->
+          <div class="booking-form-wrap reveal">
+
+            <!-- Success Message (shown after submit) -->
+            <div
+              id="formSuccess"
+              class="form-success"
+              role="alert"
+              aria-live="assertive"
+              tabindex="-1"
+            >
+              <div class="form-success__icon" aria-hidden="true">✅</div>
+              <h3 class="form-success__title">Reservation Confirmed!</h3>
+              <p class="form-success__text">
+                Thank you for booking with Mood&amp;Food. We have received your reservation and a confirmation will be sent to your email address shortly.
+                <br/><br/>
+                <strong>Need to make changes?</strong> Call us at
+                <a href="tel:+922135000000" style="color:#2e7d32; text-decoration:underline;">021-3500-0000</a>
+              </p>
+            </div>
+
+            <!-- Booking Form -->
+            <form
+              id="reservationForm"
+              novalidate
+              aria-labelledby="formTitle"
+            >
+              <h3 class="form-section-title" id="formTitle">Your Reservation Details</h3>
+
+              <!-- ── PERSONAL INFORMATION ── -->
+              <fieldset>
+                <legend>Personal Information</legend>
+                <div class="form-grid">
+
+                  <div class="form-group">
+                    <label class="form-label" for="fullname">
+                      Full Name <span class="required" aria-label="required">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      id="fullname"
+                      name="fullname"
+                      class="form-control"
+                      placeholder="e.g. Ayesha Khan"
+                      required
+                      autocomplete="name"
+                      aria-required="true"
+                      aria-describedby="fullname-error"
+                    />
+                    <span id="fullname-error" class="form-error" role="alert" aria-live="polite"></span>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="email">
+                      Email Address <span class="required" aria-label="required">*</span>
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="form-control"
+                      placeholder="e.g. ayesha@email.com"
+                      required
+                      autocomplete="email"
+                      aria-required="true"
+                      aria-describedby="email-error"
+                    />
+                    <span id="email-error" class="form-error" role="alert" aria-live="polite"></span>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="phone">
+                      Phone Number <span class="required" aria-label="required">*</span>
+                    </label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      class="form-control"
+                      placeholder="e.g. 0300-1234567"
+                      required
+                      autocomplete="tel"
+                      aria-required="true"
+                      aria-describedby="phone-error phone-hint"
+                    />
+                    <span id="phone-hint" class="form-error" style="color:var(--color-text-muted);">Pakistani or international format</span>
+                    <span id="phone-error" class="form-error" role="alert" aria-live="polite"></span>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="guests">
+                      Number of Guests <span class="required" aria-label="required">*</span>
+                    </label>
+                    <select
+                      id="guests"
+                      name="guests"
+                      class="form-control"
+                      required
+                      aria-required="true"
+                      aria-describedby="guests-error"
+                    >
+                      <option value="" disabled selected>Select guests</option>
+                      <option value="1">1 Guest</option>
+                      <option value="2">2 Guests</option>
+                      <option value="3">3 Guests</option>
+                      <option value="4">4 Guests</option>
+                      <option value="5">5 Guests</option>
+                      <option value="6">6 Guests</option>
+                      <option value="7">7 Guests</option>
+                      <option value="8">8 Guests</option>
+                      <option value="9">9 Guests (Group)</option>
+                      <option value="10">10 Guests (Group)</option>
+                      <option value="15">11–15 Guests (Call Us)</option>
+                      <option value="20">16–20 Guests (Call Us)</option>
+                    </select>
+                    <span id="guests-error" class="form-error" role="alert" aria-live="polite"></span>
+                  </div>
+
+                </div>
+              </fieldset>
+
+              <!-- ── DATE & TIME ── -->
+              <fieldset>
+                <legend>Date &amp; Time Preference</legend>
+                <div class="form-grid">
+
+                  <div class="form-group">
+                    <label class="form-label" for="date">
+                      Preferred Date <span class="required" aria-label="required">*</span>
+                    </label>
+                    <input
+                      type="date"
+                      id="date"
+                      name="date"
+                      class="form-control"
+                      required
+                      aria-required="true"
+                      aria-describedby="date-error"
+                    />
+                    <span id="date-error" class="form-error" role="alert" aria-live="polite"></span>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="time">
+                      Preferred Time <span class="required" aria-label="required">*</span>
+                    </label>
+                    <select
+                      id="time"
+                      name="time"
+                      class="form-control"
+                      required
+                      aria-required="true"
+                      aria-describedby="time-error"
+                    >
+                      <option value="" disabled selected>Select time</option>
+                      <optgroup label="Lunch Service">
+                        <option value="12:00">12:00 PM</option>
+                        <option value="12:30">12:30 PM</option>
+                        <option value="13:00">1:00 PM</option>
+                        <option value="13:30">1:30 PM</option>
+                        <option value="14:00">2:00 PM</option>
+                        <option value="14:30">2:30 PM</option>
+                      </optgroup>
+                      <optgroup label="Dinner Service">
+                        <option value="19:00">7:00 PM</option>
+                        <option value="19:30">7:30 PM</option>
+                        <option value="20:00">8:00 PM</option>
+                        <option value="20:30">8:30 PM</option>
+                        <option value="21:00">9:00 PM</option>
+                        <option value="21:30">9:30 PM</option>
+                        <option value="22:00">10:00 PM</option>
+                        <option value="22:30">10:30 PM</option>
+                      </optgroup>
+                    </select>
+                    <span id="time-error" class="form-error" role="alert" aria-live="polite"></span>
+                  </div>
+
+                  <div class="form-group form-group--full">
+                    <label class="form-label" for="occasion">
+                      Occasion <span style="font-weight:400; color:var(--color-text-muted);">(optional)</span>
+                    </label>
+                    <select
+                      id="occasion"
+                      name="occasion"
+                      class="form-control"
+                      aria-describedby="occasion-hint"
+                    >
+                      <option value="">No special occasion</option>
+                      <option value="birthday">Birthday Celebration</option>
+                      <option value="anniversary">Anniversary Dinner</option>
+                      <option value="engagement">Engagement</option>
+                      <option value="business">Business Lunch / Dinner</option>
+                      <option value="date">Date Night</option>
+                      <option value="family">Family Gathering</option>
+                      <option value="other">Other</option>
+                    </select>
+                    <span id="occasion-hint" style="font-size:.8125rem; color:var(--color-text-muted);">Let us know so we can make it extra special.</span>
+                  </div>
+
+                </div>
+              </fieldset>
+
+              <!-- ── SPECIAL REQUESTS ── -->
+              <fieldset>
+                <legend>Additional Preferences</legend>
+                <div class="form-group form-group--full">
+                  <label class="form-label" for="requests">
+                    Special Requests <span style="font-weight:400; color:var(--color-text-muted);">(optional)</span>
+                  </label>
+                  <textarea
+                    id="requests"
+                    name="requests"
+                    class="form-control"
+                    rows="4"
+                    placeholder="Dietary requirements, seating preferences, accessibility needs, special decorations, allergies, or any other request…"
+                    aria-describedby="requests-hint"
+                    maxlength="500"
+                  ></textarea>
+                  <span id="requests-hint" style="font-size:.8125rem; color:var(--color-text-muted);">Maximum 500 characters. We will do our best to accommodate all reasonable requests.</span>
+                </div>
+
+                <!-- Dietary checkboxes -->
+                <div style="margin-top:var(--space-md);">
+                  <p class="form-label" id="dietary-label">Dietary Requirements</p>
+                  <div role="group" aria-labelledby="dietary-label" style="display:flex; flex-wrap:wrap; gap:.75rem; margin-top:.5rem;">
+                    <label style="display:flex; align-items:center; gap:.4rem; font-size:.9rem; cursor:pointer;">
+                      <input type="checkbox" name="dietary" value="vegetarian" style="width:16px;height:16px;accent-color:var(--color-primary);" />
+                      Vegetarian
+                    </label>
+                    <label style="display:flex; align-items:center; gap:.4rem; font-size:.9rem; cursor:pointer;">
+                      <input type="checkbox" name="dietary" value="vegan" style="width:16px;height:16px;accent-color:var(--color-primary);" />
+                      Vegan
+                    </label>
+                    <label style="display:flex; align-items:center; gap:.4rem; font-size:.9rem; cursor:pointer;">
+                      <input type="checkbox" name="dietary" value="gluten-free" style="width:16px;height:16px;accent-color:var(--color-primary);" />
+                      Gluten-Free
+                    </label>
+                    <label style="display:flex; align-items:center; gap:.4rem; font-size:.9rem; cursor:pointer;">
+                      <input type="checkbox" name="dietary" value="nut-free" style="width:16px;height:16px;accent-color:var(--color-primary);" />
+                      Nut Allergy
+                    </label>
+                    <label style="display:flex; align-items:center; gap:.4rem; font-size:.9rem; cursor:pointer;">
+                      <input type="checkbox" name="dietary" value="halal" style="width:16px;height:16px;accent-color:var(--color-primary);" />
+                      Halal Only
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+
+              <!-- Consent -->
+              <div class="form-group" style="margin-bottom:var(--space-lg);">
+                <label style="display:flex; align-items:flex-start; gap:.625rem; font-size:.9rem; cursor:pointer; line-height:1.5;">
+                  <input
+                    type="checkbox"
+                    id="consent"
+                    name="consent"
+                    required
+                    aria-required="true"
+                    aria-describedby="consent-error"
+                    style="width:16px;height:16px;accent-color:var(--color-primary);flex-shrink:0;margin-top:3px;"
+                  />
+                  <span>
+                    I agree to the <a href="#" style="color:var(--color-primary); text-decoration:underline;">Terms &amp; Conditions</a> and consent to Mood&amp;Food processing my personal data to handle this reservation. <span class="required" aria-label="required">*</span>
+                  </span>
+                </label>
+                <span id="consent-error" class="form-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <!-- Submit -->
+              <button
+                type="submit"
+                class="btn btn--primary"
+                style="width:100%; justify-content:center; font-size:1rem; padding:1rem;"
+              >
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                Confirm My Reservation
+              </button>
+
+              <p style="text-align:center;font-size:.8125rem;color:var(--color-text-muted);margin-top:.875rem;">
+                <svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                Your information is secure and will never be shared with third parties.
+              </p>
+
+            </form>
+
+          </div>
+
+          <!-- ── BOOKING INFO SIDEBAR ──────────────── -->
+          <aside class="booking-info reveal reveal-delay-2" aria-label="Restaurant booking information">
+            <h3 class="booking-info__title">Booking Information</h3>
+
+            <ul class="booking-info__list" role="list">
+              <li class="booking-info__item">
+                <span class="booking-info__item-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </span>
+                <div>
+                  <span class="booking-info__item-label">Opening Hours</span>
+                  <span class="booking-info__item-value">
+                    Monday – Sunday<br/>
+                    12:00 PM – 12:00 AM<br/>
+                    <em>(Last seating: 10:30 PM)</em>
+                  </span>
+                </div>
+              </li>
+
+              <li class="booking-info__item">
+                <span class="booking-info__item-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </span>
+                <div>
+                  <span class="booking-info__item-label">Location</span>
+                  <span class="booking-info__item-value">
+                    14-C, Sunset Boulevard,<br/>
+                    DHA Phase 5, Karachi<br/>
+                    <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" style="color:var(--color-accent-dark); text-decoration:underline;">View on Google Maps</a>
+                  </span>
+                </div>
+              </li>
+
+              <li class="booking-info__item">
+                <span class="booking-info__item-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.46 2 2 0 0 1 3.57 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </span>
+                <div>
+                  <span class="booking-info__item-label">Phone</span>
+                  <span class="booking-info__item-value">
+                    <a href="tel:+922135000000" style="color:var(--color-accent-dark);">021-3500-0000</a><br/>
+                    <em>For groups of 9+</em>
+                  </span>
+                </div>
+              </li>
+
+              <li class="booking-info__item">
+                <span class="booking-info__item-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </span>
+                <div>
+                  <span class="booking-info__item-label">Email</span>
+                  <span class="booking-info__item-value">
+                    <a href="mailto:reservations@moodfood.pk" style="color:var(--color-accent-dark);">reservations@moodfood.pk</a>
+                  </span>
+                </div>
+              </li>
+            </ul>
+
+            <div class="booking-info__note">
+              <strong>📌 Reservation Policy:</strong><br/>
+              Tables are held for 15 minutes past booking time. For parties of 9 or more, please call us directly. Cancellations must be made 2 hours in advance. Special occasion setups should be requested at least 24 hours before.
+            </div>
+
+            <!-- Map placeholder -->
+            <div
+              style="margin-top:var(--space-md); border-radius:var(--radius-md); overflow:hidden; border:1px solid var(--color-border);"
+              role="img"
+              aria-label="Map showing Mood&amp;Food restaurant location in DHA Phase 5, Karachi"
+            >
+              <iframe
+                title="Mood&amp;Food location map — DHA Phase 5, Karachi"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.885234870678!2d67.0658!3d24.8079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDQ4JzI4LjQiTiA2N8KwMDMnNTYuOSJF!5e0!3m2!1sen!2spk!4v1234567890"
+                width="100%"
+                height="180"
+                style="border:0; display:block;"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="section section--alt" aria-labelledby="faqHeading">
+      <div class="container" style="max-width:800px;">
+        <header class="section-header reveal">
+          <p class="eyebrow">Got Questions?</p>
+          <div class="divider" aria-hidden="true"><span class="divider__icon">✦</span></div>
+          <h2 id="faqHeading">Frequently Asked Questions</h2>
+        </header>
+
+        <div class="reveal" style="display:flex; flex-direction:column; gap:1rem;">
+
+          <details style="background:var(--color-surface); border:1px solid var(--color-border); border-radius:var(--radius-md); padding:var(--space-md);">
+            <summary style="font-family:var(--font-heading); font-weight:600; color:var(--color-primary); cursor:pointer; font-size:1.0625rem; list-style:none; display:flex; justify-content:space-between; align-items:center;">
+              Can I walk in without a reservation?
+              <span aria-hidden="true" style="font-size:1.25rem; font-family:sans-serif;">＋</span>
+            </summary>
+            <p style="margin-top:.75rem; color:var(--color-text-muted); font-size:.9375rem; line-height:1.7;">
+              Walk-ins are welcome subject to availability. However, we strongly recommend making a reservation, especially for evenings and weekends, as tables fill up quickly. Reservations guarantee your preferred seating.
+            </p>
+          </details>
+
+          <details style="background:var(--color-surface); border:1px solid var(--color-border); border-radius:var(--radius-md); padding:var(--space-md);">
+            <summary style="font-family:var(--font-heading); font-weight:600; color:var(--color-primary); cursor:pointer; font-size:1.0625rem; list-style:none; display:flex; justify-content:space-between; align-items:center;">
+              Is there parking available?
+              <span aria-hidden="true" style="font-size:1.25rem; font-family:sans-serif;">＋</span>
+            </summary>
+            <p style="margin-top:.75rem; color:var(--color-text-muted); font-size:.9375rem; line-height:1.7;">
+              Yes, complimentary valet parking is available at the entrance. We also have a dedicated car park with 60 spaces on the basement level. Street parking is available on Sunset Boulevard.
+            </p>
+          </details>
+
+          <details style="background:var(--color-surface); border:1px solid var(--color-border); border-radius:var(--radius-md); padding:var(--space-md);">
+            <summary style="font-family:var(--font-heading); font-weight:600; color:var(--color-primary); cursor:pointer; font-size:1.0625rem; list-style:none; display:flex; justify-content:space-between; align-items:center;">
+              Do you cater for private events and parties?
+              <span aria-hidden="true" style="font-size:1.25rem; font-family:sans-serif;">＋</span>
+            </summary>
+            <p style="margin-top:.75rem; color:var(--color-text-muted); font-size:.9375rem; line-height:1.7;">
+              Absolutely. We have two private dining rooms accommodating 12 and 30 guests respectively. We offer bespoke menus, custom decorations, and dedicated event coordinators. Please email <a href="mailto:events@moodfood.pk" style="color:var(--color-accent-dark);">events@moodfood.pk</a> for enquiries.
+            </p>
+          </details>
+
+          <details style="background:var(--color-surface); border:1px solid var(--color-border); border-radius:var(--radius-md); padding:var(--space-md);">
+            <summary style="font-family:var(--font-heading); font-weight:600; color:var(--color-primary); cursor:pointer; font-size:1.0625rem; list-style:none; display:flex; justify-content:space-between; align-items:center;">
+              What is your dress code?
+              <span aria-hidden="true" style="font-size:1.25rem; font-family:sans-serif;">＋</span>
+            </summary>
+            <p style="margin-top:.75rem; color:var(--color-text-muted); font-size:.9375rem; line-height:1.7;">
+              We maintain a smart casual dress code. We kindly ask that guests avoid beachwear, sportswear, and flip-flops. Business casual and formal attire is always welcome and appreciated.
+            </p>
+          </details>
+
+          <details style="background:var(--color-surface); border:1px solid var(--color-border); border-radius:var(--radius-md); padding:var(--space-md);">
+            <summary style="font-family:var(--font-heading); font-weight:600; color:var(--color-primary); cursor:pointer; font-size:1.0625rem; list-style:none; display:flex; justify-content:space-between; align-items:center;">
+              Are children welcome?
+              <span aria-hidden="true" style="font-size:1.25rem; font-family:sans-serif;">＋</span>
+            </summary>
+            <p style="margin-top:.75rem; color:var(--color-text-muted); font-size:.9375rem; line-height:1.7;">
+              Yes, Mood&amp;Food is a family-friendly restaurant. We have a dedicated children's menu and high chairs are available upon request. The ground floor is fully accessible for prams and wheelchairs.
+            </p>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a href="index.html" aria-label="Mood&amp;Food Homepage">
+            <span class="logo-text">Mood&amp;Food</span>
+            <span class="logo-tagline">Fine Dining · Karachi</span>
+          </a>
+          <p>Where flavour meets emotion. A celebration of culinary excellence and warm hospitality.</p>
+          <nav aria-label="Social media links">
+            <ul class="footer-social" role="list">
+              <li><a href="#" class="social-link" aria-label="Instagram"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a></li>
+              <li><a href="#" class="social-link" aria-label="Facebook"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a></li>
+              <li><a href="#" class="social-link" aria-label="Twitter"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a></li>
+            </ul>
+          </nav>
+        </div>
+        <nav class="footer-col" aria-label="Site navigation">
+          <h3>Explore</h3>
+          <ul role="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Our Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="reservation.html">Reservations</a></li>
+          </ul>
+        </nav>
+        <div class="footer-col">
+          <h3>Experiences</h3>
+          <ul role="list">
+            <li><a href="reservation.html">Fine Dining</a></li>
+            <li><a href="reservation.html">Private Events</a></li>
+            <li><a href="reservation.html">Corporate Lunches</a></li>
+            <li><a href="reservation.html">Anniversary Packages</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <ul style="display:flex;flex-direction:column;gap:.875rem;" role="list">
+            <li class="footer-contact-item">
+              <svg class="footer-contact-item__icon" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <address style="font-style:normal; color: rgba(255,255,255,0.7); font-size:.9rem;">14-C Sunset Blvd, DHA Phase 5, Karachi</address>
+            </li>
+            <li class="footer-contact-item">
+              <svg class="footer-contact-item__icon" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span style="color:rgba(255,255,255,.7);font-size:.9rem;">Mon–Sun: 12:00 PM – 12:00 AM</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span class="js-year">2025</span> Mood&amp;Food. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> &nbsp;·&nbsp; <a href="#">Terms of Service</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
