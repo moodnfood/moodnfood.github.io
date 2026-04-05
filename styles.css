@@ -11,6 +11,7 @@
   --color-primary-dark:  #6A1C28;   /* Hover state            */
   --color-accent:        #C8965A;   /* Warm gold – decorative */
   --color-accent-dark:   #A0722A;   /* Gold – interactive use */
+  --color-accent-contrast:#8A5E20;  /* Darker gold for AA text */
 
   /* Neutrals */
   --color-bg:            #FAFAF8;   /* Off-white canvas       */
@@ -830,6 +831,40 @@ h1, h2, h3, h4, h5, h6 {
 .testimonial-card__role {
   font-size: 0.8125rem;
   color: var(--color-text-muted);
+}
+
+/* ─── 11A. WCAG Contrast-Only Fixes (Requested Scope) ───────── */
+/* Type A: darker gold on white/light backgrounds */
+.nav__logo-tagline,
+#featured-dishes .section-header .eyebrow,
+#featured-dishes .divider__icon,
+#featured-dishes .dish-card__category,
+#about-preview .about-preview__content .eyebrow,
+#testimonials .section-header .eyebrow,
+#testimonials .divider__icon,
+#testimonials .testimonial-card__stars {
+  color: var(--color-accent-contrast);
+}
+
+/* Testimonial quotation marks: keep same look, only darken enough for contrast */
+#testimonials .testimonial-card__quote-icon {
+  color: var(--color-accent-contrast);
+  opacity: 0.75;
+}
+
+/* Type B: black text on bright gold backgrounds */
+section[aria-labelledby="ctaBannerHeading"] .btn--accent,
+section[aria-labelledby="ctaBannerHeading"] .btn--accent:hover,
+section[aria-labelledby="ctaBannerHeading"] .btn--accent:focus-visible,
+#featured-dishes .dishes-grid > article:nth-child(2) .dish-card__badge {
+  color: #000000;
+}
+
+/* Type C: white text for header CTA on dark background */
+.nav__cta,
+.nav__cta:hover,
+.nav__cta:focus-visible {
+  color: var(--color-text-light);
 }
 
 /* ─── 12. Menu Page ──────────────────────────────────────────── */
