@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO -->
+  <title>Our Menu — Mood&amp;Food | Fine Dining Karachi</title>
+  <meta name="description" content="Explore Mood&amp;Food's carefully curated menu — featuring artisan starters, exquisite main courses, and indulgent desserts. Prices in PKR." />
+  <link rel="canonical" href="https://moodfood.pk/menu.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Our Menu — Mood&amp;Food" />
+  <meta property="og:description" content="Starters, mains, and desserts crafted with passion. Browse Mood&amp;Food's complete dining menu." />
+  <meta property="og:image"       content="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=80&auto=format&fit=crop" />
+  <meta property="og:url"         content="https://moodfood.pk/menu.html" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍷</text></svg>" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- NAVIGATION (same across all pages) -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html" class="nav__logo" aria-label="Mood&amp;Food — Home">
+          <span class="nav__logo-text">Mood&amp;Food</span>
+          <span class="nav__logo-tagline" aria-hidden="true">Fine Dining · Karachi</span>
+        </a>
+        <button class="nav__toggle" id="navToggle" aria-controls="navList" aria-expanded="false" aria-label="Open navigation menu">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+        <ul class="nav__list" id="navList" role="list">
+          <li><a href="index.html"       class="nav__link">Home</a></li>
+          <li><a href="menu.html"        class="nav__link">Menu</a></li>
+          <li><a href="about.html"       class="nav__link">About Us</a></li>
+          <li><a href="reservation.html" class="nav__link nav__cta btn btn--primary">Reserve a Table</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- MENU HERO -->
+    <section class="menu-hero" aria-labelledby="menuHeroHeading">
+      <div class="menu-hero__content container">
+        <nav aria-label="Breadcrumb">
+          <ol class="breadcrumb" role="list">
+            <li><a href="index.html">Home</a></li>
+            <li class="breadcrumb__separator" aria-hidden="true">/</li>
+            <li class="breadcrumb__current" aria-current="page">Menu</li>
+          </ol>
+        </nav>
+        <p class="eyebrow" style="color:var(--color-accent);font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;margin-bottom:.5rem;">Crafted with Passion</p>
+        <h1 id="menuHeroHeading">Our Dining Menu</h1>
+        <p>Every dish tells a story. Browse our seasonal menu crafted fresh daily by our executive chef and culinary team.</p>
+      </div>
+    </section>
+
+    <!-- MENU CONTENT -->
+    <section class="section" aria-labelledby="menuContentHeading">
+      <div class="container">
+
+        <h2 id="menuContentHeading" class="sr-only">Menu Categories</h2>
+
+        <!-- Filter Tabs -->
+        <div role="tablist" aria-label="Filter menu by category" class="menu-tabs">
+          <button class="menu-tab active" role="tab" aria-selected="true"  data-category="all"        id="tab-all"       aria-controls="menu-all">All Items</button>
+          <button class="menu-tab"        role="tab" aria-selected="false" data-category="starters"   id="tab-starters"  aria-controls="cat-starters">🥗 Starters</button>
+          <button class="menu-tab"        role="tab" aria-selected="false" data-category="mains"      id="tab-mains"     aria-controls="cat-mains">🍖 Main Course</button>
+          <button class="menu-tab"        role="tab" aria-selected="false" data-category="desserts"   id="tab-desserts"  aria-controls="cat-desserts">🍮 Desserts</button>
+          <button class="menu-tab"        role="tab" aria-selected="false" data-category="beverages"  id="tab-beverages" aria-controls="cat-beverages">🥂 Beverages</button>
+        </div>
+
+        <!-- ── STARTERS ────────────────────────────── -->
+        <article class="menu-category reveal" data-category="starters" id="cat-starters" aria-labelledby="startersHeading">
+          <div class="menu-category__header">
+            <div class="menu-category__line" aria-hidden="true"></div>
+            <h2 class="menu-category__title" id="startersHeading">
+              <span class="menu-category__icon" aria-hidden="true">🥗</span>
+              Starters &amp; Appetisers
+            </h2>
+            <div class="menu-category__line" aria-hidden="true"></div>
+          </div>
+          <p style="text-align:center;color:var(--color-text-muted);margin-bottom:var(--space-lg);font-style:italic;">Begin your journey with our curated selection of appetisers</p>
+
+          <div class="menu-items-grid">
+
+            <div class="menu-item">
+              <img
+                src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=200&q=75&auto=format&fit=crop"
+                alt="Tiger prawn salad with mango, avocado, and citrus dressing"
+                class="menu-item__img"
+                loading="lazy"
+                width="90" height="90"
+              />
+              <div class="menu-item__body">
+                <h3 class="menu-item__name">Tiger Prawn Salad</h3>
+                <p class="menu-item__desc">Grilled tiger prawns, mango &amp; avocado, micro herbs, pine nuts, citrus-chilli glaze</p>
+                <div class="menu-item__tags">
+                  <span class="menu-item__tag menu-item__tag--chef">Chef's Pick</span>
+                  <span class="menu-item__tag menu-item__tag--spicy">Mild Spice</span>
+                </div>
+                <div class="menu-item__footer">
+                  <p class="menu-item__price">Rs. 1,850</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <img
+                src="https://images.unsplash.com/photo-1547592180-85f173990554?w=200&q=75&auto=format&fit=crop"
+                alt="Roasted tomato bruschetta with basil, garlic, and aged balsamic on sourdough"
+                class="menu-item__img"
+                loading="lazy"
+                width="90" height="90"
+              />
+              <div class="menu-item__body">
+                <h3 class="menu-item__name">Roasted Tomato Bruschetta</h3>
+                <p class="menu-item__desc">Heirloom tomatoes, fresh basil, roasted garlic, aged balsamic glaze on toasted sourdough</p>
+                <div class="menu-item__tags">
+                  <span class="menu-item__tag menu-item__tag--veg">Vegetarian</span>
+                </div>
+                <div class="menu-item__footer">
+                  <p class="menu-item__price">Rs. 950</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <img
+                src="https://images.unsplash.com/photo-1604909052743-94e838986d24?w=200&q=75&auto=format&fit=crop"
+                alt="Creamy mushroom soup in a white bowl with truffle oil and fresh parsley"
+                class="menu-item__img"
+                loading="lazy"
+                width="90" height="90"
+              />
+              <div class="menu-item__body">
+                <h3 class="menu-item__name">Wild Mushroom Velouté</h3>
+                <p class="menu-item__desc">Blended wild mushrooms, double cream, shallots, truffle oil, toasted croutons, fresh parsley</p>
+                <div class="menu-item__tags">
+                  <span class="menu-item__tag menu-item__tag--veg">Vegetarian</span>
+                  <span class="menu-item__tag">Gluten-Free Option</span>
+                </div>
+                <div class="menu-item__footer">
+                  <p class="menu-item__price">Rs. 1,100</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <img
+                src="https://images.unsplash.com/photo-1505253758473-96b7015fcd40?w=200&q=75&auto=format&fit=crop"
+                alt="Crispy calamari rings with lemon wedge and garlic aioli dipping sauce"
+                class="menu-item__img"
+                loading="lazy"
+                width="90" height="90"
+              />
+              <div class="menu-item__body">
+                <h3 class="menu-item__name">Crispy Calamari</h3>
+                <p class="menu-item__desc">Lightly dusted calamari rings, flash-fried golden, served with garlic aioli and lemon wedge</p>
+                <div class="menu-item__tags">
+                  <span class="menu-item__tag">Signature</span>
+                </div>
+                <div class="menu-item__footer">
+                  <p class="menu-item__price">Rs. 1,450</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <img
+                src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=200&q=75&auto=format&fit=crop"
+                alt="Mixed green salad with cherry tomatoes, cucumber, feta cheese and olive oil dressing"
+                class="menu-item__img"
+                loading="lazy"
+                width="90" height="90"
+              />
+              <div class="menu-item__body">
+                <h3 class="menu-item__name">Garden Green Salad</h3>
+                <p class="menu-item__desc">Mixed greens, cherry tomatoes, cucumber ribbons, Greek feta, Kalamata olives, lemon-oregano dressing</p>
+                <div class="menu-item__tags">
+                  <span class="menu-item__tag menu-item__tag--veg">Vegetarian</span>
+                  <span class="menu-item__tag">Gluten-Free</span>
+                </div>
+                <div class="menu-item__footer">
+                  <p class="menu-item__price">Rs. 890</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <img
+                src="https://images.unsplash.com/photo-1574894709920-11b28e7367e3?w=200&q=75&auto=format&fit=crop"
+                alt="Seared scallops with pea puree, crispy pancetta and lemon butter on a white plate"
+                class="menu-item__img"
+                loading="lazy"
+                width="90" height="90"
+              />
+              <div class="menu-item__body">
+                <h3 class="menu-item__name">Pan-Seared Scallops</h3>
+                <p class="menu-item__desc">King scallops seared golden, pea &amp; mint purée, crispy pancetta, micro watercress, lemon butter</p>
+                <div class="menu-item__tags">
+                  <span class="menu-item__tag menu-item__tag--chef">Chef's Pick</span>
+                </div>
+                <div class="menu-item__footer">
+                  <p class="menu-item__price">Rs. 2,200</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- ── MAIN COURSE ─────────────────────────── -->
+        <article class="menu-category reveal" data-category="mains" id="cat-mains" aria-labelledby="mainsHeading">
+          <div class="menu-category__header">
+            <div class="menu-category__line" aria-hidden="true"></div>
+            <h2 class="menu-category__title" id="mainsHeading">
+              <span class="menu-category__icon" aria-hidden="true">🍖</span>
+              Main Course
+            </h2>
+            <div class="menu-category__line" aria-hidden="true"></div>
+          </div>
+          <p style="text-align:center;color:var(--color-text-muted);margin-bottom:var(--space-lg);font-style:italic;">The heart of your dining experience — bold, satisfying, unforgettable</p>
+
+          <div class="menu-items-grid">
+
+            <div class="menu-item">
+              <img
+                src="https://images.unsplash.com/photo-1558030006-450675393462?w=200&q=75&auto=format&fit=crop"
+                alt="Slow-roasted Australian lamb rack with rosemary jus and truffle mash"
+                class="menu-item__img"
+                loading="lazy"
+                width="90" height="90"
+              />
+              <div class="menu-item__body">
+                <h3 class="menu-item__name">Rosemary Lamb Rack</h3>
+                <p class="menu-item__desc">12-hour slow-roasted Australian lamb rack, rosemary &amp; red wine jus, truffle mash, grilled asparagus</p>
+                <div class="menu-item__tags">
+                  <span class="menu-item__tag menu-item__tag--chef">Most Loved</span>
+                  <span class="menu-item__tag">Gluten-Free</span>
+                </div>
+                <div class="menu-item__footer">
+                  <p class="menu-item__price">Rs. 4,200</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <img
+                src="https://images.unsplash.com/photo-1519984388953-d2406bc725e1?w=200&q=75&auto=format&fit=crop"
+                alt="Grilled Atlantic salmon fillet with roasted vegetables and lemon butter sauce"
+                class="menu-item__img"
+                loading="lazy"
+                width="90" height="90"
+              />
+              <div class="menu-item__body">
+                <h3 class="menu-item__name">Atlantic Salmon Fillet</h3>
+                <p class="menu-item__desc">Grilled Atlantic salmon, lemon-caper beurre blanc, roasted seasonal vegetables, herb-roasted potatoes</p>
+                <div class="menu-item__tags">
+                  <span class="menu-item__tag">Gluten-Free</span>
+                </div>
+                <div class="menu-item__footer">
+                  <p class="menu-item__price">Rs. 3,500</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <img
+                src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=200&q=75&auto=format&fit=crop"
+                alt="Beef tenderloin steak cooked medium-rare with red wine sauce and mashed potatoes"
+                class="menu-item__img"
+                loading="lazy"
+                width="90" height="90"
+              />
+              <div class="menu-item__body">
+                <h3 class="menu-item__name">Beef Tenderloin (250g)</h3>
+                <p class="menu-item__desc">Prime Australian beef tenderloin, peppercorn &amp; Cognac sauce, dauphinoise potatoes, wilted spinach</p>
+                <div class="menu-item__tags">
+                  <span class="menu-item__tag menu-item__tag--chef">Chef's Favourite</span>
+                </div>
+                <div class="menu-item__footer">
+                  <p class="menu-item__price">Rs. 5,800</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <img
+                src="https://images.unsplash.com/photo-1574484284002-952d92a03a05?w=200&q=75&auto=format&fit=crop"
+                alt="Creamy mushroom and truffle risotto in a white bowl with parmesan shavings"
+                class="menu-item__img"
+                loading="lazy"
+                width="90" height="90"
+              />
+              <div class="menu-item__body">
+                <h3 class="menu-item__name">Truffle &amp; Wild Mushroom Risotto</h3>
+                <p class="menu-item__desc">Arborio rice, wild mushroom medley, white truffle oil, aged parmesan, fresh herbs, crispy shallots</p>
+                <div class="menu-item__tags">
+                  <span class="menu-item__tag menu-item__tag--veg">Vegetarian</span>
+                  <span class="menu-item__tag">Gluten-Free</span>
+                </div>
+                <div class="menu-item__footer">
+                  <p class="menu-item__price">Rs. 2,600</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <img
+                src="https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?w=200&q=75&auto=format&fit=crop"
+                alt="Spiced chicken with saffron sauce, rice pilaf and roasted tomatoes"
+                class="menu-item__img"
+                loading="lazy"
+                width="90" height="90"
+              />
+              <div class="menu-item__body">
+                <h3 class="menu-item__name">Saffron Roasted Chicken</h3>
+                <p class="menu-item__desc">Free-range chicken breast, saffron &amp; honey glaze, apricot couscous, charred lemon, fresh dill yoghurt</p>
+                <div class="menu-item__tags">
+                  <span class="menu-item__tag">Signature</span>
+                </div>
+                <div class="menu-item__footer">
+                  <p class="menu-item__price">Rs. 2,900</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <img
+                src="https://images.unsplash.com/photo-1607330289024-1535c6b4e1c1?w=200&q=75&auto=format&fit=crop"
+                alt="Butternut squash and spinach pasta with cream sauce and pine nuts"
+                class="menu-item__img"
+                loading="lazy"
+                width="90" height="90"
+              />
+              <div class="menu-item__body">
+                <h3 class="menu-item__name">Pumpkin Sage Tagliatelle</h3>
+                <p class="menu-item__desc">Hand-rolled tagliatelle, roasted butternut squash, crispy sage, pine nuts, aged pecorino, brown butter</p>
+                <div class="menu-item__tags">
+                  <span class="menu-item__tag menu-item__tag--veg">Vegetarian</span>
+                </div>
+                <div class="menu-item__footer">
+                  <p class="menu-item__price">Rs. 2,100</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- ── DESSERTS ────────────────────────────── -->
+        <article class="menu-category reveal" data-category="desserts" id="cat-desserts" aria-labelledby="dessertsHeading">
+          <div class="menu-category__header">
+            <div class="menu-category__line" aria-hidden="true"></div>
+            <h2 class="menu-category__title" id="dessertsHeading">
+              <span class="menu-category__icon" aria-hidden="true">🍮</span>
+              Desserts
+            </h2>
+            <div class="menu-category__line" aria-hidden="true"></div>
+          </div>
+          <p style="text-align:center;color:var(--color-text-muted);margin-bottom:var(--space-lg);font-style:italic;">End on a sweet note — our pastry chef's finest creations</p>
+
+          <div class="menu-items-grid">
+
+            <div class="menu-item">
+              <img
+                src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=200&q=75&auto=format&fit=crop"
+                alt="Warm chocolate fondant with molten centre and vanilla ice cream"
+                class="menu-item__img"
+                loading="lazy"
+                width="90" height="90"
+              />
+              <div class="menu-item__body">
+                <h3 class="menu-item__name">Belgian Chocolate Fondant</h3>
+                <p class="menu-item__desc">Warm dark chocolate fondant, molten centre, Madagascar vanilla ice cream, raspberry coulis, gold dust</p>
+                <div class="menu-item__tags">
+                  <span class="menu-item__tag menu-item__tag--chef">Signature</span>
+                  <span class="menu-item__tag menu-item__tag--veg">Vegetarian</span>
+                </div>
+                <div class="menu-item__footer">
+                  <p class="menu-item__price">Rs. 1,100</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <img
+                src="https://images.unsplash.com/photo-1488900128323-21503983a07e?w=200&q=75&auto=format&fit=crop"
+                alt="Creamy tiramisu in a glass with cocoa powder dusting and coffee"
+                class="menu-item__img"
+                loading="lazy"
+                width="90" height="90"
+              />
+              <div class="menu-item__body">
+                <h3 class="menu-item__name">Classic Tiramisu</h3>
+                <p class="menu-item__desc">Savoiardi ladyfingers soaked in Arabica espresso, mascarpone cream, Dutch cocoa, dark chocolate shavings</p>
+                <div class="menu-item__tags">
+                  <span class="menu-item__tag menu-item__tag--veg">Vegetarian</span>
+                </div>
+                <div class="menu-item__footer">
+                  <p class="menu-item__price">Rs. 980</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <img
+                src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=200&q=75&auto=format&fit=crop"
+                alt="Light and airy lemon tart with meringue and fresh berry garnish"
+                class="menu-item__img"
+                loading="lazy"
+                width="90" height="90"
+              />
+              <div class="menu-item__body">
+                <h3 class="menu-item__name">Sicilian Lemon Tart</h3>
+                <p class="menu-item__desc">Crisp pastry shell, tangy lemon curd, Italian meringue, candied lemon peel, fresh berries</p>
+                <div class="menu-item__tags">
+                  <span class="menu-item__tag menu-item__tag--veg">Vegetarian</span>
+                  <span class="menu-item__tag">New</span>
+                </div>
+                <div class="menu-item__footer">
+                  <p class="menu-item__price">Rs. 870</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <img
+                src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=200&q=75&auto=format&fit=crop"
+                alt="Chilled mango panna cotta with passionfruit coulis and mint"
+                class="menu-item__img"
+                loading="lazy"
+                width="90" height="90"
+              />
+              <div class="menu-item__body">
+                <h3 class="menu-item__name">Mango &amp; Passionfruit Panna Cotta</h3>
+                <p class="menu-item__desc">Silky vanilla panna cotta, chilled Alphonso mango jelly, passionfruit coulis, coconut crumble</p>
+                <div class="menu-item__tags">
+                  <span class="menu-item__tag menu-item__tag--veg">Vegetarian</span>
+                  <span class="menu-item__tag">Gluten-Free</span>
+                </div>
+                <div class="menu-item__footer">
+                  <p class="menu-item__price">Rs. 920</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- ── BEVERAGES ───────────────────────────── -->
+        <article class="menu-category reveal" data-category="beverages" id="cat-beverages" aria-labelledby="beveragesHeading">
+          <div class="menu-category__header">
+            <div class="menu-category__line" aria-hidden="true"></div>
+            <h2 class="menu-category__title" id="beveragesHeading">
+              <span class="menu-category__icon" aria-hidden="true">🥂</span>
+              Beverages
+            </h2>
+            <div class="menu-category__line" aria-hidden="true"></div>
+          </div>
+          <p style="text-align:center;color:var(--color-text-muted);margin-bottom:var(--space-lg);font-style:italic;">Handcrafted drinks to complement every course</p>
+
+          <div class="menu-items-grid">
+
+            <div class="menu-item">
+              <img
+                src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=200&q=75&auto=format&fit=crop"
+                alt="Freshly brewed specialty coffee in a white cup with latte art"
+                class="menu-item__img"
+                loading="lazy"
+                width="90" height="90"
+              />
+              <div class="menu-item__body">
+                <h3 class="menu-item__name">Single-Origin Coffee</h3>
+                <p class="menu-item__desc">Ethiopian Yirgacheffe — filter, espresso, latte, cappuccino or flat white. Your choice.</p>
+                <div class="menu-item__tags">
+                  <span class="menu-item__tag menu-item__tag--veg">Vegan Option</span>
+                </div>
+                <div class="menu-item__footer">
+                  <p class="menu-item__price">Rs. 650</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <img
+                src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=200&q=75&auto=format&fit=crop"
+                alt="Fresh seasonal fruit mocktail with mint and ice in a tall glass"
+                class="menu-item__img"
+                loading="lazy"
+                width="90" height="90"
+              />
+              <div class="menu-item__body">
+                <h3 class="menu-item__name">Signature Mocktails</h3>
+                <p class="menu-item__desc">Seasonal fruit blends: Passion Sunrise, Berry Bliss, or Minty Mango Fizz. Served tall with crushed ice.</p>
+                <div class="menu-item__tags">
+                  <span class="menu-item__tag menu-item__tag--veg">Vegan</span>
+                </div>
+                <div class="menu-item__footer">
+                  <p class="menu-item__price">Rs. 750</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <img
+                src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=200&q=75&auto=format&fit=crop"
+                alt="Artisan loose-leaf herbal tea served in a glass teapot"
+                class="menu-item__img"
+                loading="lazy"
+                width="90" height="90"
+              />
+              <div class="menu-item__body">
+                <h3 class="menu-item__name">Artisan Loose-Leaf Tea</h3>
+                <p class="menu-item__desc">Selection: Darjeeling First Flush, Moroccan Mint, Chamomile Honey, or Kashmiri Kahwa.</p>
+                <div class="menu-item__tags">
+                  <span class="menu-item__tag menu-item__tag--veg">Vegan</span>
+                  <span class="menu-item__tag">Gluten-Free</span>
+                </div>
+                <div class="menu-item__footer">
+                  <p class="menu-item__price">Rs. 550</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <img
+                src="https://images.unsplash.com/photo-1621263764928-df1444c5e859?w=200&q=75&auto=format&fit=crop"
+                alt="Freshly squeezed orange and citrus juice in a chilled glass"
+                class="menu-item__img"
+                loading="lazy"
+                width="90" height="90"
+              />
+              <div class="menu-item__body">
+                <h3 class="menu-item__name">Fresh-Pressed Juice</h3>
+                <p class="menu-item__desc">Squeezed to order: Pure Orange, Watermelon Mint, Carrot &amp; Ginger, or Green Detox blend.</p>
+                <div class="menu-item__tags">
+                  <span class="menu-item__tag menu-item__tag--veg">Vegan</span>
+                  <span class="menu-item__tag">Gluten-Free</span>
+                </div>
+                <div class="menu-item__footer">
+                  <p class="menu-item__price">Rs. 680</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- MENU NOTES -->
+        <aside class="reveal" style="background:var(--color-bg-alt); border-radius:var(--radius-lg); padding:var(--space-lg); margin-top:var(--space-xl); border:1px solid var(--color-border);" aria-label="Dietary and allergy information">
+          <h2 style="font-size:1.125rem; margin-bottom:.75rem; color:var(--color-primary);">
+            <span aria-hidden="true">ℹ️</span> Dietary &amp; Allergy Information
+          </h2>
+          <p style="color:var(--color-text-muted); font-size:.9375rem; line-height:1.7;">
+            We accommodate most dietary requirements including vegetarian, vegan, gluten-free, and nut-free preparations. Please inform your server of any allergies or preferences when ordering. Our kitchen handles nuts, gluten, dairy, and shellfish. All prices are inclusive of taxes. Menu items are subject to seasonal availability.
+          </p>
+          <div style="margin-top:1rem; display:flex; gap:.5rem; flex-wrap:wrap; font-size:.8125rem;">
+            <span style="background:#e8f5e9; color:#2e7d32; padding:.2rem .65rem; border-radius:3px; font-weight:600;">🌱 Vegetarian</span>
+            <span style="background:#e8f5e9; color:#1b5e20; padding:.2rem .65rem; border-radius:3px; font-weight:600;">🌿 Vegan</span>
+            <span style="background:#fff3e0; color:#e65100; padding:.2rem .65rem; border-radius:3px; font-weight:600;">🌾 Gluten-Free Available</span>
+            <span style="background:#fde8e8; color:#c62828; padding:.2rem .65rem; border-radius:3px; font-weight:600;">🌶 Contains Spice</span>
+            <span style="background:#fff8e1; color:#f57f17; padding:.2rem .65rem; border-radius:3px; font-weight:600;">👨‍🍳 Chef's Recommendation</span>
+          </div>
+        </aside>
+
+        <!-- RESERVATION CTA -->
+        <div class="reveal" style="text-align:center; margin-top:var(--space-xl); padding:var(--space-xl); background:linear-gradient(135deg, var(--color-primary) 0%, #4a0f18 100%); border-radius:var(--radius-lg); color:white;">
+          <p style="font-size:.8rem; letter-spacing:.16em; text-transform:uppercase; color:var(--color-accent); font-weight:600; margin-bottom:.5rem;">Ready to Dine?</p>
+          <h2 style="color:white; font-size:clamp(1.75rem, 3vw, 2.5rem); margin-bottom:1rem;">Reserve Your Table Tonight</h2>
+          <p style="color:rgba(255,255,255,.8); max-width:50ch; margin:0 auto 1.5rem;">Join us for an evening you won't forget. Tables are limited — book in advance to secure your preferred time.</p>
+          <a href="reservation.html" class="btn btn--accent">Book a Table Now</a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a href="index.html" aria-label="Mood&amp;Food Homepage">
+            <span class="logo-text">Mood&amp;Food</span>
+            <span class="logo-tagline">Fine Dining · Karachi</span>
+          </a>
+          <p>Where flavour meets emotion. A celebration of culinary excellence and warm hospitality.</p>
+          <nav aria-label="Social media links">
+            <ul class="footer-social" role="list">
+              <li><a href="#" class="social-link" aria-label="Instagram">
+                <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </a></li>
+              <li><a href="#" class="social-link" aria-label="Facebook">
+                <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </a></li>
+              <li><a href="#" class="social-link" aria-label="Twitter">
+                <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+              </a></li>
+            </ul>
+          </nav>
+        </div>
+        <nav class="footer-col" aria-label="Site navigation">
+          <h3>Explore</h3>
+          <ul role="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Our Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="reservation.html">Reservations</a></li>
+          </ul>
+        </nav>
+        <div class="footer-col">
+          <h3>Experiences</h3>
+          <ul role="list">
+            <li><a href="reservation.html">Fine Dining</a></li>
+            <li><a href="reservation.html">Private Events</a></li>
+            <li><a href="reservation.html">Corporate Lunches</a></li>
+            <li><a href="reservation.html">Anniversary Packages</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <ul class="booking-info__list" role="list" style="display:flex;flex-direction:column;gap:.875rem;">
+            <li class="footer-contact-item">
+              <svg class="footer-contact-item__icon" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <address style="font-style:normal; color: rgba(255,255,255,0.7); font-size:.9rem;">14-C Sunset Blvd, DHA Phase 5, Karachi</address>
+            </li>
+            <li class="footer-contact-item">
+              <svg class="footer-contact-item__icon" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.46 2 2 0 0 1 3.57 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <a href="tel:+922135000000" style="color:rgba(255,255,255,.7);font-size:.9rem;">021-3500-0000</a>
+            </li>
+            <li class="footer-contact-item">
+              <svg class="footer-contact-item__icon" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span style="color:rgba(255,255,255,.7);font-size:.9rem;">Mon–Sun: 12:00 PM – 12:00 AM</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span class="js-year">2025</span> Mood&amp;Food. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> &nbsp;·&nbsp; <a href="#">Terms of Service</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
