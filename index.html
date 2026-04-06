@@ -33,19 +33,15 @@
   <link rel="stylesheet" href="styles.css" />
 
   <!-- Favicon (SVG inline) -->
-   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍷</text></svg>" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍷</text></svg>" />
 </head>
 
 <body>
 
-  <!-- ╔═══════════════════════════════════════╗
-       ║  SKIP NAVIGATION LINK (Accessibility) ║
-       ╚═══════════════════════════════════════╝ -->
+  <!-- Skip Navigation Link (Accessibility) -->
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <!-- ╔═══════════════════════════════════════╗
-       ║  SITE HEADER / NAVIGATION             ║
-       ╚═══════════════════════════════════════╝ -->
+  <!-- Site Header / Navigation -->
   <header class="site-header" role="banner">
     <div class="container">
       <nav class="nav" aria-label="Primary navigation">
@@ -81,17 +77,13 @@
     </div>
   </header>
 
-  
-  <!-- ╔═══════════════════════════════════════╗
-       ║  MAIN CONTENT                         ║
-       ╚═══════════════════════════════════════╝ -->
+  <!-- Main Content -->
   <main id="main-content">
 
-    <!-- ── HERO ─────────────────────────────────────── -->
+    <!-- Hero Section -->
     <section class="hero" aria-labelledby="heroHeading">
       <div class="hero__bg" role="img" aria-label="Elegant restaurant interior with warm candlelit ambience"></div>
       <div class="hero__overlay" aria-hidden="true"></div>
-
 
       <div class="container">
         <div class="hero__content">
@@ -109,10 +101,12 @@
           <div class="hero__actions">
             <a href="reservation.html" class="btn btn--primary">
               <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-              Book a Table
+              <span aria-hidden="true">Book a Table</span>
+              <span class="sr-only">Reserve a table at Mood and Food</span>
             </a>
             <a href="menu.html" class="btn btn--ghost">
-              Explore Our Menu
+              <span aria-hidden="true">Explore Our Menu</span>
+              <span class="sr-only">Explore the Mood and Food menu</span>
             </a>
           </div>
         </div>
@@ -124,37 +118,34 @@
       </div>
     </section>
 
-    <!-- â”€â”€ FEATURES BAR â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
-    <section class="features-bar" aria-label="Restaurant highlights">
+    <!-- Features Bar -->
+    <section class="features-bar" aria-labelledby="featuresHeading">
       <div class="container">
+        <h2 id="featuresHeading" class="sr-only">Restaurant Highlights</h2>
         <ul class="features-bar__grid" role="list">
-          <!-- FIX #1: replaced ðŸ† emoji with HTML entity -->
           <li class="feature-item">
-            <span class="feature-item__icon" aria-hidden="true">&#x1F3C6;</span>
+            <span class="feature-item__icon" aria-hidden="true">🏆</span>
             <div>
               <div class="feature-item__title" role="heading" aria-level="3">Award-Winning</div>
               <p class="feature-item__desc">Best Fine Dining 2023 &amp; 2024</p>
             </div>
           </li>
-          <!-- FIX #2: replaced ðŸŒ¿ emoji with HTML entity -->
           <li class="feature-item">
-            <span class="feature-item__icon" aria-hidden="true">&#x1F33F;</span>
+            <span class="feature-item__icon" aria-hidden="true">🌿</span>
             <div>
               <div class="feature-item__title" role="heading" aria-level="3">Farm to Table</div>
               <p class="feature-item__desc">Locally sourced, seasonal produce</p>
             </div>
           </li>
-          <!-- FIX #3: replaced ðŸ‘¨â€ðŸ³ emoji with HTML entity -->
           <li class="feature-item">
-            <span class="feature-item__icon" aria-hidden="true">&#x1F468;&#x200D;&#x1F373;</span>
+            <span class="feature-item__icon" aria-hidden="true">👨‍🍳</span>
             <div>
               <div class="feature-item__title" role="heading" aria-level="3">Master Chefs</div>
               <p class="feature-item__desc">Internationally trained culinary team</p>
             </div>
           </li>
-          <!-- FIX #4: replaced ðŸ¥‚ emoji with HTML entity -->
           <li class="feature-item">
-            <span class="feature-item__icon" aria-hidden="true">&#x1F942;</span>
+            <span class="feature-item__icon" aria-hidden="true">🥂</span>
             <div>
               <div class="feature-item__title" role="heading" aria-level="3">Private Dining</div>
               <p class="feature-item__desc">Exclusive event &amp; occasion packages</p>
@@ -164,19 +155,17 @@
       </div>
     </section>
 
-    <!-- â”€â”€ FEATURED DISHES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+    <!-- Featured Dishes -->
     <section class="section" id="featured-dishes" aria-labelledby="dishesHeading">
       <div class="container">
 
         <header class="section-header reveal">
           <p class="eyebrow">Chef's Showcase</p>
-          <!-- FIX #5: replaced âœ¦ with HTML entity -->
           <div class="divider" aria-hidden="true">
-            <span class="divider__icon">&#x2726;</span>
+            <span class="divider__icon">✦</span>
           </div>
           <h2 id="dishesHeading">Signature Creations</h2>
-          <!-- FIX #5: replaced â€” (em dash) with HTML entity &mdash; -->
-          <p>Each dish is a masterpiece &mdash; crafted with seasonal ingredients, artisanal technique, and a deep respect for flavour.</p>
+          <p>Each dish is a masterpiece — crafted with seasonal ingredients, artisanal technique, and a deep respect for flavour.</p>
         </header>
 
         <div class="dishes-grid">
@@ -204,7 +193,7 @@
                 <p class="dish-card__price">
                   Rs. 1,850 <span>/ serving</span>
                 </p>
-                <a href="menu.html" class="btn btn--outline" style="padding:.5rem 1rem;font-size:.85rem;">View Menu</a>
+                <a href="menu.html" class="btn btn--outline" style="padding:.5rem 1rem;font-size:.85rem;"><span aria-hidden="true">View Menu</span><span class="sr-only"> for Tiger Prawn Salad</span></a>
               </div>
             </div>
           </article>
@@ -232,7 +221,7 @@
                 <p class="dish-card__price">
                   Rs. 4,200 <span>/ serving</span>
                 </p>
-                <a href="menu.html" class="btn btn--outline" style="padding:.5rem 1rem;font-size:.85rem;">View Menu</a>
+                <a href="menu.html" class="btn btn--outline" style="padding:.5rem 1rem;font-size:.85rem;"><span aria-hidden="true">View Menu</span><span class="sr-only"> for Rosemary Lamb Rack</span></a>
               </div>
             </div>
           </article>
@@ -260,7 +249,7 @@
                 <p class="dish-card__price">
                   Rs. 1,100 <span>/ serving</span>
                 </p>
-                <a href="menu.html" class="btn btn--outline" style="padding:.5rem 1rem;font-size:.85rem;">View Menu</a>
+                <a href="menu.html" class="btn btn--outline" style="padding:.5rem 1rem;font-size:.85rem;"><span aria-hidden="true">View Menu</span><span class="sr-only"> for Chocolate Fondant</span></a>
               </div>
             </div>
           </article>
@@ -269,14 +258,16 @@
 
         <div style="text-align:center; margin-top:var(--space-xl);" class="reveal">
           <a href="menu.html" class="btn btn--primary">
-            View Full Menu
+            <span aria-hidden="true">View Full Menu</span>
+            <span class="sr-only">Browse the full restaurant menu</span>
             <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
         </div>
 
       </div>
     </section>
-    <!-- ── ABOUT PREVIEW ─────────────────────────────── -->
+
+    <!-- About Preview -->
     <section class="section section--alt" id="about-preview" aria-labelledby="aboutPreviewHeading">
       <div class="container">
         <div class="about-preview">
@@ -310,15 +301,15 @@
 
             <div class="about-preview__stats" aria-label="Restaurant achievements">
               <div class="about-preview__stat">
-                <p class="num">500+</p>
+                <div class="num" role="heading" aria-level="3">500+</div>
                 <p class="lbl">Guests Per Night</p>
               </div>
               <div class="about-preview__stat">
-                <p class="num">120+</p>
+                <div class="num" role="heading" aria-level="3">120+</div>
                 <p class="lbl">Menu Items</p>
               </div>
               <div class="about-preview__stat">
-                <p class="num">7</p>
+                <div class="num" role="heading" aria-level="3">7</div>
                 <p class="lbl">Industry Awards</p>
               </div>
             </div>
@@ -333,15 +324,14 @@
       </div>
     </section>
 
-    <!-- â”€â”€ TESTIMONIALS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+    <!-- Testimonials -->
     <section class="section" id="testimonials" aria-labelledby="testimonialsHeading">
       <div class="container">
 
         <header class="section-header reveal">
           <p class="eyebrow">Guest Reviews</p>
-          <!-- FIX #5: âœ¦ divider icon entity (also in testimonials section) -->
           <div class="divider" aria-hidden="true">
-            <span class="divider__icon">&#x2726;</span>
+            <span class="divider__icon">✦</span>
           </div>
           <h2 id="testimonialsHeading">What Our Guests Say</h2>
           <p>Don't take our word for it — here's what the people who matter most have to say about their Mood&amp;Food experience.</p>
@@ -352,9 +342,8 @@
           <!-- Testimonial 1 -->
           <article class="testimonial-card reveal reveal-delay-1" aria-labelledby="t1Name">
             <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
-            <!-- FIX #6: replaced â˜…â˜…â˜…â˜…â˜… with HTML entities -->
             <div class="testimonial-card__stars" aria-label="5 out of 5 stars" role="img">
-              <span aria-hidden="true">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span>
+              <span aria-hidden="true">★★★★★</span>
             </div>
             <blockquote>
               <p class="testimonial-card__text">
@@ -365,8 +354,7 @@
               <div class="testimonial-card__avatar" aria-hidden="true">SA</div>
               <div>
                 <p class="testimonial-card__name" id="t1Name">Sana Ahmed</p>
-                <!-- FIX #9: Â· replaced with &middot; -->
-                <p class="testimonial-card__role">Food Blogger &middot; Karachi</p>
+                <p class="testimonial-card__role">Food Blogger · Karachi</p>
               </div>
             </div>
           </article>
@@ -374,13 +362,12 @@
           <!-- Testimonial 2 -->
           <article class="testimonial-card reveal reveal-delay-2" aria-labelledby="t2Name">
             <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
-            <!-- FIX #7: replaced â˜…â˜…â˜…â˜…â˜… with HTML entities -->
             <div class="testimonial-card__stars" aria-label="5 out of 5 stars" role="img">
-              <span aria-hidden="true">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span>
+              <span aria-hidden="true">★★★★★</span>
             </div>
             <blockquote>
               <p class="testimonial-card__text">
-                "We booked the private dining area for our anniversary dinner. The attention to detail — from the flower arrangement to the personalised menu cards &mdash; was beyond anything we expected."
+                "We booked the private dining area for our anniversary dinner. The attention to detail — from the flower arrangement to the personalised menu cards — was beyond anything we expected."
               </p>
             </blockquote>
             <div class="testimonial-card__author">
@@ -395,9 +382,8 @@
           <!-- Testimonial 3 -->
           <article class="testimonial-card reveal reveal-delay-3" aria-labelledby="t3Name">
             <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
-            <!-- FIX #8: replaced â˜…â˜…â˜…â˜…â˜… with HTML entities -->
             <div class="testimonial-card__stars" aria-label="5 out of 5 stars" role="img">
-              <span aria-hidden="true">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span>
+              <span aria-hidden="true">★★★★★</span>
             </div>
             <blockquote>
               <p class="testimonial-card__text">
@@ -408,8 +394,7 @@
               <div class="testimonial-card__avatar" aria-hidden="true">FR</div>
               <div>
                 <p class="testimonial-card__name" id="t3Name">Faisal Raza</p>
-                <!-- FIX #9: Â· replaced with &middot; -->
-                <p class="testimonial-card__role">Business Executive &middot; Lahore</p>
+                <p class="testimonial-card__role">Business Executive · Lahore</p>
               </div>
             </div>
           </article>
@@ -419,7 +404,7 @@
       </div>
     </section>
 
-        <!-- ── RESERVATION CTA BANNER ────────────────────── -->
+    <!-- Reservation CTA Banner -->
     <section
       class="section"
       style="background: linear-gradient(135deg, var(--color-primary) 0%, #4a0f18 100%); color: white; text-align: center;"
@@ -438,7 +423,7 @@
             <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
             Book Online Now
           </a>
-          <a href="tel:+922135XXXXXX" class="btn btn--ghost">
+          <a href="tel:+922135000000" class="btn btn--ghost">
             <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.46 2 2 0 0 1 3.57 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             Call Us: 021-3500-0000
           </a>
@@ -448,7 +433,7 @@
 
   </main>
 
-  <!-- SITE FOOTER -->
+  <!-- Site Footer -->
   <footer class="site-footer" role="contentinfo">
     <div class="container">
 
@@ -458,8 +443,7 @@
         <div class="footer-brand">
           <a href="index.html" aria-label="Mood&amp;Food Homepage">
             <span class="logo-text">Mood&amp;Food</span>
-            <!-- FIX #9: replaced Â· with &middot; in footer tagline -->
-            <span class="logo-tagline">Fine Dining &middot; Karachi</span>
+            <span class="logo-tagline">Fine Dining · Karachi</span>
           </a>
           <p>
             Where flavour meets emotion. Mood&amp;Food is a celebration of culinary excellence, warm hospitality, and memories that linger long after the last course.
@@ -529,13 +513,12 @@
             </li>
             <li class="footer-contact-item">
               <svg class="footer-contact-item__icon" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              <a href="/cdn-cgi/l/email-protection#771f121b1b18371a1818131118181359071c" style="color:rgba(255,255,255,.7);font-size:.9rem;"><span class="__cf_email__" data-cfemail="553d3039393a15383a3a31333a3a317b253e">[email&#160;protected]</span></a>
+              <a href="mailto:info@moodfood.pk" style="color:rgba(255,255,255,.7);font-size:.9rem;">info@moodfood.pk</a>
             </li>
             <li class="footer-contact-item">
               <svg class="footer-contact-item__icon" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              <!-- FIX #10: replaced â€“ (en dash) with HTML entity &ndash; -->
               <span style="color:rgba(255,255,255,.7);font-size:.9rem;">
-                Mon&ndash;Sun: 12:00 PM &ndash; 12:00 AM
+                Mon–Sun: 12:00 PM – 12:00 AM
               </span>
             </li>
           </ul>
@@ -547,8 +530,8 @@
       <div class="footer-bottom">
         <p>&copy; <span class="js-year">2025</span> Mood&amp;Food. All rights reserved.</p>
         <p>
-          <span>Privacy Policy</span> &nbsp;&middot;&nbsp;
-          <span>Terms of Service</span> &nbsp;&middot;&nbsp;
+          <span>Privacy Policy</span> &nbsp;·&nbsp;
+          <span>Terms of Service</span> &nbsp;·&nbsp;
           <span>Accessibility</span>
         </p>
       </div>
@@ -557,6 +540,6 @@
   </footer>
 
   <!-- Main JS -->
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="main.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
